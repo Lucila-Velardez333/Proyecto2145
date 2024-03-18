@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#" method="post">
+        <!-- input(captura informacion) y lavel(le da nombre a lo que vamos a rellenar) -->
+        <label for="nombre">Nombre :</label>
+        <input class="estiloImput" type="text" id="nombre" name="nombre"  placeholder="escriba aqui su nombre">
+        <br>
+        <label for="apellido">Apellido :</label>
+        <input class="estiloImput" type="text" id="apellido" name="apellido" maxlength="20" minlength="3" placeholder="escriba aqui su apellido">
+        <br>
+        <label for="direccion">Direccion :</label>
+        <input class="estiloImput" type="text" id="direccion" name="direccion" required>
+        <br>
+        <label for="altura">Altura :</label>
+        <input class="estiloImput" type="number" id="altura" name="altura" value="00" max="10000" min="1" required>
+        <br>
+        <label for="mail">E-mail :</label>
+        <input class="estiloImput" type="email" id="mail" name="mail"  readonly value="luluvelardez9@gmail.com" required>
+        <br>
+        <label for="password">Password :</label>
+        <input  class="estiloImput" type="password" id="password" name="password" required>
+        <br>
+
+        <hr>
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha" id="fecha">
+        <hr>
+        <input type="range">
+
+        <hr>
+        <input type="file">
+        <hr>
+        <h2>Checkbox</h2>
+        <input type="checkbox" name="marca" value="1" >fiat
+        <input type="checkbox" name="marca" value="2" >ford
+        <input type="checkbox" name="marca" value="3" >renau
+        <h2>Radio button</h2>
+        <input type="radio" name="marca" value="1" >fiat
+        <input type="radio" name="marca" value="2" >ford
+        <input type="radio" name="marca" value="3" >renau
+        <hr>
+        <fieldset>
+            <legend>Datos del alumno </legend>
+            <label for="apellido">Apellido :</label>
+            <input class="estiloImput" type="text" id="apellido" name="apellido" maxlength="20" minlength="3" placeholder="escriba aqui su apellido">
+            <br>
+        </fieldset>
+        <hr>
+        <label for="comentario">Comentario</label>
+        <textarea name="" id="comentario" cols="30" rows="10"></textarea>
+        <hr>
+        <h3>Provincia</h3>
+        <select multiple >
+            <option value="1">Cordoba</option>
+            <option value="2" selected>Mendoza</option>
+            <option value="3">Santa fe</option>
+
+        </select>
+        <h3>Autos</h3>
+        <select name="" id="">
+            <optgroup label="Nacionales">
+                <option value="">ford</option>
+                <option value="">fiat</option>
+
+            </optgroup>
+            <optgroup label="Importados">
+                <option value="">bmw</option>
+                <option value="">mercedes</option>
+
+            </optgroup>
+
+        </select>
+
+        <input type="submit" value="enviar">
+        <!-- los input los puedo ordenar en una table -->
+        <table>
+            <tr> <td></td> <td></td> </tr>
+        </table>
+
+
+        <!-- tiene que tener un submit al final -->
+
+    </form>
+
+
+
+
+</body>
+</html>
